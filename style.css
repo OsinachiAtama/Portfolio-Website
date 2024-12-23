@@ -39,6 +39,7 @@ nav{
 ul{ 
     display: flex;
     align-items: center;
+    /*Creates a gap between every element in ul*/
     gap: 3em;
 }
 
@@ -76,8 +77,106 @@ nav ul a:hover{
 }
 
 .btn:hover{
+    background-color: white;
+    color: var(--background);
     
 }
+
+span{
+    /*Sets the background of the text*/
+    background: linear-gradient(to right, #c0a3d2, #46036f );
+    /*Makes that background to only appear behind the text*/
+    background-clip: text;
+    /*Makes the text transparent so that it gets the color behind it..
+    Soo cool*/
+    color: transparent;
+}
+
+#menu{
+    color: white;
+    font-size: 3em;
+
+}
+
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+
+#home{
+    display: flex;
+    /*This stacks everything in the flex from top to bottom*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+    color: white;
+}
+
+.profile{
+    width: 25vh;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:0.5em;
+    max-width: 650px;
+}
+
+.info-box h1{
+    font-size: 4.7em;
+    font-weight: 500;
+}
+
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.info-box p{
+    opacity: 0.7;
+}
+
+.btn-box{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    
+}
+
+.btn-box .btn:nth-of-type(1){
+    background-color:white;
+    color:var(--background);
+   
+}
+
+.btn-box .btn:nth-of-type(1):hover{
+    background-color:var(--background);
+    color:white;
+}
+
+.icon{
+    height: 6vh;
+    background: linear-gradient(to bottom, #c0a3d2, #46036f);
+    border:linear-gradient(to bottom, #c0a3d2, #46036f) ; 
+    background-clip: content-box;
+    gap:3em; 
+} 
+
+
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #c0a3d2, #46036f ) ;
+}
+
 
 
 
@@ -272,23 +371,3 @@ body{
     text-align: center;
 } */
 /* 
-.icons{
-    display: inline-block;    
-    list-style-type: none;
-    margin-inline-start: 41.5%;
-
-   
-
-} 
-
-.icon{
-    display: block;
-    list-style-type: none;    
-    float: left; 
-    margin: 20px;
-   
-} 
-
-.linkedin{ 
-    margin-left: 100px;
-} */

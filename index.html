@@ -7,27 +7,49 @@
     <link rel="stylesheet" href="style.css"/>
 
     <title>Portfolio website</title>
-  
-    <!--<ul class="menu">
-        <li class="menu_item">Home</li>
-        <li class="menu_item">Projects</li>
-        <li class="menu_item">Contact</li>
-    </ul>-->
 </head>
 
 <body>
-    <script src = "script.js"></script>
-    <nav>
-        <a class = "logo" href="#"> O A</a>
-    <ul class="menu">
-        <a href="#index.html">Home</a>
-        <a href="#projects.html">Projects</a>
-        <a href="#contact">Contact me</a>
-    </ul>
-    <a href="#contact" class="btn">Contact me</a>
-    </nav>
-  
     
+    <nav>
+        <a href="#" class = "logo" ><span>OA</span> </a>
+        <ul class="menu">
+            <a href="#index.html">Home</a>
+            <a href="#about.html">About</a>
+            <a href="#projects.html">Projects</a>
+            <a href="#contact">Contact</a>
+        </ul>
+        <!--Diff between an id and a class is that an id should be unique
+        but a class can be reused. "i" is used to italicize things -->
+        <i class="bx bx-menu-alt-right" id="menu"></i>
+        <a href="#contact" class="btn">Contact me</a>
+    </nav>
+    
+    <section id="home">
+        <img class = "profile" src="images/profile.jpg" alt="">
+
+        <div class="info-box">
+            <h1><span>Hello, I'm Osinachi</span></h1>
+            <h3><span>Computer Science major</span> at Tufts University</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Cumque, tenetur, id est neque incidunt ex error esse ad 
+                delectus reprehenderit eos impedit accusantium voluptatum 
+                culpa corrupti animi, sint aliquid tempore?</p>
+
+        </div>
+        <div class="btn-box">
+            <div class="btn">Contact Me</div>
+        </div>
+
+        <ul class="icons">
+            <a class= "icon" class="linkedin" href="https://www.linkedin.com/in/osinachi-atama/"><img height = "50" width="50" src="images/linkedin.png" alt=""></a>
+            <a class= "icon" href="https://github.com/OsinachiAtama"><img class= "github"src="images/github.png" alt="" height="50" width="50"></a>
+        </ul>
+
+
+    </section>
+
+    <script src = "script.js"></script>
         <!-- <section class="section1">
             <div class="Hello_div"><h1 class="Hello">Hello, my name is Osinachi Atama!</h1>
                 <div class="Hello_message"><p>Hello! I'm Osinachi, a Computer Science major 
@@ -59,13 +81,5 @@
                     <div   class="desc">Third Project</div>    
                 </div> 
             </div> -->
-
-        </section class = "section3"> 
-      
-        <ul class="icons">
-        <li class= "icon" class="linkedin"><a href="https://www.linkedin.com/in/osinachi-atama/"><img height = "50" width="50" src="images/linkedin.png" alt=""></a></li>
-        <li class= "icon"><a href="https://github.com/OsinachiAtama"><img class= "github"src="images/github.png" alt="" height="50" width="50"></a></li>
-        </ul>
-        </section>
 </body>
 </html>
