@@ -114,7 +114,8 @@ section{
 }
 
 .profile{
-    width: 25vh;
+    width: 25vh; /*25% view port height, useful in creating responsive designs
+    vw means viewport width*/
     border-radius: 50%;
     margin-top: 3em;
 }
@@ -176,6 +177,92 @@ section{
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom, #c0a3d2, #46036f ) ;
 }
+
+/*---------------------About page-------------------*/
+
+#about{
+    background-color: var(--second-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5em;
+}
+
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+}
+
+.about-box h1{
+    font-size: 5em;
+}
+
+.about-box p{
+    color:white;
+    opacity: 0.8;
+}
+
+.skills{
+    display: flex;
+    text-align: left;
+    gap:10em;
+}
+
+.skills ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity:0.8;
+    align-items: baseline;
+}
+
+.skills ul li span{
+    display:flex;
+    align-items: center;
+    gap:0.5em;
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out;
+}
+
+.skills ul li span:hover{
+    transform: translateX(10px); /*Moves everything to the right 10px when you hover*/
+}
+
+.skills ul li i{
+    font-size: 1.2em;
+}
+
+.about-box h2{
+    font-size: 2.5em;
+}
+
+/*---------------------Projects page-------------------*/
+
+#projects{
+    background-color: var(--background);
+}
+
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
 
 
 
