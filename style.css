@@ -161,11 +161,13 @@ section{
 }
 
 .icon{
-    height: 6vh;
+
+    font-size: 3em ;
+    /* height: 6vh;
     background: linear-gradient(to bottom, #c0a3d2, #46036f);
     border:linear-gradient(to bottom, #c0a3d2, #46036f) ; 
     background-clip: content-box;
-    gap:3em; 
+    gap:3em;  */
 } 
 
 
@@ -335,6 +337,17 @@ form input:focus{ /*Focus means when you click, this is different from hover*/
     background: rgb(229,229,229);
 }
 
+/*-------------------------------Footer-------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-top: 15px;
+}
+
+footer 
 
 
 
