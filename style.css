@@ -14,8 +14,8 @@ aquavgrotesque
 }
 
 :root{
-    --background: rgb(24,24,24);
-    --second-background:rgb(21,21,21);
+    --background: rgb(223, 219, 230);
+    --second-background:rgb(220, 209, 232);
 }
 
 body{ 
@@ -31,7 +31,7 @@ nav{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(15,15,15,0.8);
+    background-color: rgba(236, 232, 240, 0.8);
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
@@ -44,7 +44,7 @@ ul{
 }
 
 nav ul a{
-    color:white; 
+    color:black; 
     opacity:0.7;
     transition: 0.2s ease-in-out;
 }
@@ -66,18 +66,18 @@ nav ul a:hover{
 
 .btn{
     padding:0.5em 1em;
-    color: white;
+    color: black;
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 0.5em;
     font-size: 1.1em;
-    border:2px solid white;
+    border:2px solid black;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
 .btn:hover{
-    background-color: white;
+    background-color: black;
     color: var(--background);
     
 }
@@ -93,7 +93,7 @@ span{
 }
 
 #menu{
-    color: white;
+    color: black;
     font-size: 3em;
 
 }
@@ -104,26 +104,43 @@ section{
 }
 
 #home{
+    /* border-color: #c0a3d2;
+    border-style: solid ; */
     display: flex;
     /*This stacks everything in the flex from top to bottom*/
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     gap:2em;
-    color: white;
+    color: black;
+    margin-top: 3em;
+    margin-left: 3em;
+  
+    z-index: 1;
 }
 
+.circle{
+    width: 500px;
+    height: 400px; 
+    border-bottom-right-radius: 100%;
+    background-color: #46036f;
+    overflow: hidden;
+    position: absolute;
+}
+
+
 .profile{
-    width: 25vh; /*25% view port height, useful in creating responsive designs
+    width: 40vh; /*25% view port height, useful in creating responsive designs
     vw means viewport width*/
     border-radius: 50%;
-    margin-top: 3em;
+    /* margin-top: 3em; */
 }
 
 .info-box{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     gap:0.5em;
     max-width: 650px;
 }
@@ -150,19 +167,20 @@ section{
 }
 
 .btn-box .btn:nth-of-type(1){
-    background-color:white;
+    background-color:black;
     color:var(--background);
    
 }
 
 .btn-box .btn:nth-of-type(1):hover{
     background-color:var(--background);
-    color:white;
+    color:black;
 }
 
 .icon{
 
     font-size: 3em ;
+    
     /* height: 6vh;
     background: linear-gradient(to bottom, #c0a3d2, #46036f);
     border:linear-gradient(to bottom, #c0a3d2, #46036f) ; 
@@ -188,6 +206,7 @@ section{
     align-items: center;
     justify-content: center;
     gap:5em;
+   
 }
 
 #about img{
@@ -207,7 +226,7 @@ section{
 }
 
 .about-box p{
-    color:white;
+    color:black;
     opacity: 0.8;
 }
 
@@ -266,7 +285,7 @@ section{
 }
 
 .box{
-    border: 3px solid rgb(49,49,49);
+    border: 3px solid rgb(87, 23, 107);
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
@@ -275,14 +294,14 @@ section{
     object-fit: cover;
     padding: 3em;
     gap: 2em;
-    color: white;
+    color: black;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     
 }
 
 .box:hover{
-    border: 3px solid rgb(100,100,100);
+    border: 3px solid rgb(166, 122, 169);
 }
 
 .box h1{
@@ -347,7 +366,7 @@ footer{
     padding-top: 15px;
 }
 
-footer 
+
 
 
 
