@@ -23,6 +23,18 @@ body{
     background-color: var(--background);
 }
 
+.home_circle{
+    top: 0;
+    width: 500px;
+    height: 300px; 
+    border-bottom-right-radius: 100%;
+    border: #46036f 3px solid;
+    border-top: none;
+    border-left:none ;
+    position: absolute;
+    z-index: 1;
+}
+
 nav{
     position: fixed;
     top:0;
@@ -119,14 +131,6 @@ section{
     z-index: 1;
 }
 
-.circle{
-    width: 500px;
-    height: 400px; 
-    border-bottom-right-radius: 100%;
-    background-color: #46036f;
-    overflow: hidden;
-    position: absolute;
-}
 
 
 .profile{
@@ -134,6 +138,7 @@ section{
     vw means viewport width*/
     border-radius: 50%;
     /* margin-top: 3em; */
+    z-index: 2;
 }
 
 .info-box{
@@ -200,6 +205,18 @@ section{
 
 /*---------------------About page-------------------*/
 
+
+.about_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-right: none ;
+    border-bottom-left-radius: 100%;
+    right: 0px;    
+    position: absolute;
+    z-index: 1;
+}
 #about{
     background-color: var(--second-background);
     display: flex;
@@ -212,6 +229,7 @@ section{
 #about img{
     width: 30vw;
     border-radius: 1em;
+    z-index: 3;
 }
 
 .about-box{
@@ -268,14 +286,28 @@ section{
 
 /*---------------------Projects page-------------------*/
 
+.project_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-left: none ;
+    border-bottom-right-radius: 100%;
+    left: 0px;    
+    position: absolute;
+    z-index: 1;
+}
+
 #projects{
     background-color: var(--background);
+    
 }
 
 .header{
     text-align: center;
     font-size: 5em;
     margin: 0.5em 0;
+    z-index: 3;
 }
 
 .project-container{
@@ -285,7 +317,7 @@ section{
 }
 
 .box{
-    border: 3px solid rgb(87, 23, 107);
+    /* border: 3px solid rgb(87, 23, 107); */
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
@@ -301,7 +333,7 @@ section{
 }
 
 .box:hover{
-    border: 3px solid rgb(166, 122, 169);
+    border: 1px solid rgb(166, 122, 169);
 }
 
 .box h1{
@@ -319,6 +351,19 @@ section{
 
 
 /*---------------------Contact page-------------------*/
+
+
+.contact_circle{
+    width: 400px;
+    height: 300px; 
+    border: #46036f solid 3px;
+    border-top: none;
+    border-right: none ;
+    border-bottom-left-radius: 100%;
+    right: 0px;    
+    position: absolute;
+    z-index: 1;
+}
 
 #contact{
     background-color: var(--second-background);
